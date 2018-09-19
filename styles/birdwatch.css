@@ -1,4 +1,4 @@
-/* || General setup */
+     /* || General setup */
 
 html, body {
   margin: 0;
@@ -61,7 +61,7 @@ body > * {
   padding: 1%;
 }
 
-main, header, nav, article, aside, footer, section {
+main, header, nav, /*article,*/ aside, footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
 }
@@ -113,9 +113,9 @@ main {
   display: flex;
 }
 
-article {
+/* article {
   flex: 4;
-}
+} */
 
 aside {
   flex: 1;
