@@ -9,21 +9,21 @@
 <body>
     <header>
         <picture>
-                <source media="(max-width: 799px)" srcset="">
-                <source media="(min-width: )" srcset="">
-                <img src="" alt="">
+                <source media="(max-width: 799px)" srcset="../images/responsive/header-480px.jpg">
+                <source media="(min-width: 800px)" srcset="../images/responsive/header-800px.jpg">
+                <img 
+                src="../images/responsive/header.jpg" alt="xxx's a family">
         </picture>
     </header>
     <main>
         <section>
-            <h1></h1>
-            <p></p>
+            <h4>相同尺寸不同分辨率</h4>
             <picture>
-                <img src="" alt="" srcset="" sizes="">
-            </picture>
-            <p></p>
-            <picture>
-                <img src="" alt="" srcset="">
+
+                <img width="300px" srcset="../images/responsive/elva-320px.jpg,
+                             ../images/responsive/elva-480px.jpg 1.5x,
+                             ../images/responsive/elva-640px.jpg 2x"
+                     src="../images/responsive/elva-480px.jpg" alt="different resolution">
             </picture>
         </section>
     </main>
