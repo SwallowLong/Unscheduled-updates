@@ -1,0 +1,38 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #999;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    width: 300px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 3em;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+form div + div {
+    margin-top: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #fff;
+}
+.button {
+    padding-left: 90px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 1em;
+}
