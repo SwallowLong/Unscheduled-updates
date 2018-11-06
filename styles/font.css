@@ -1,0 +1,40 @@
+/* General setup */
+@font-face {
+    font-family:"myFont";
+    src: url("../fonts/veteran_typewriter.ttf")
+}
+
+@font-face {
+    font-family: "myP";
+    src: url("../fonts/MontserratAlternates-ExtraBoldItalic.otf")
+}
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "myFont",serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: "myFont",serif;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: "myP", serif;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
