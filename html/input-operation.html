@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>四则运算</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var first = document.getElementById("first-number"),
+            second = document.getElementById("second-number"),
+            add = document.getElementById("add-btn"),
+            minus = document.getElementById("minus-btn"),
+            times = document.getElementById("times-btn"),
+            divide = document.getElementById("divide-btn"),
+            result = document.getElementById("result");
+        add.onclick = function() {
+            var a = +first.value + +second.value;
+            result.textContent = "运算结果" + a;
+        } 
+        minus.onclick = function() {
+            var a = +first.value - +second.value;
+            result.textContent = "运算结果" + a;
+        } 
+        times.onclick = function() {
+            var a = +first.value * +second.value;
+            result.textContent = "运算结果" + a;
+        } 
+        divide.onclick = function() {
+            if (+second.value !== 0) {
+            var a = +first.value / +second.value;
+            result.textContent = "运算结果" + a;
+            } else {
+                alert("The divisor can not be 0");
+            }
+        } 
+    </script>
+</body>
+</html>

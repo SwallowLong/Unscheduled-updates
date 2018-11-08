@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>进制转换</title>
+</head>
+<body>        
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script>
+    var dec = document.getElementById("dec-number"),
+        btn = document.getElementById("trans-btn"),
+        result = document.getElementById("result");
+    btn.onclick = function() {
+        if (dec.value) {
+            if(dec.value >= 0) {
+                var a = parseInt(dec.value, 2);
+                result.textContent = "运算结果："  + a ;            
+            } else {
+                alert("请输入非负十进制整数");
+            }
+        }
+    }
+    </script>
+</body>
+</html>
+<!-- onclick的访问问题 为何放置在条件语句中就无法执行 -->
