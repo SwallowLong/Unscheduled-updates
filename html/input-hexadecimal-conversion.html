@@ -6,17 +6,26 @@
 </head>
 <body>        
     <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input type="number" id="bin-bit" placeholder="输入转化后二进制的数字位数">
     <button id="trans-btn">转化为二进制</button>
     <p id="result">运算结果</p>
     <script>
     var dec = document.getElementById("dec-number"),
+        bin = document.getElementById("bin-bit"),
         btn = document.getElementById("trans-btn"),
         result = document.getElementById("result");
     btn.onclick = function() {
         if (dec.value) {
             if(dec.value >= 0) {
-                var a = parseInt(dec.value, 2);
-                result.textContent = "运算结果："  + a ;            
+                var a = (+dec.value).toString(2);
+                    if (a.length>=bin.value) {
+                        result.textContent = "运算结果："  + a;
+                    } else {
+                        for (var i=0, len=a.length; i<(bin.value-len); i++) {
+                            a = "0" + a;     
+                        }
+                        result.textContent = "运算结果："  + a; 
+                    }            
             } else {
                 alert("请输入非负十进制整数");
             }
