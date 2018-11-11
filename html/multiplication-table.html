@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>九九乘法表</title>
+</head>
+<body>
+    <button id="btn">点击出九九乘法表</button>
+    <script>
+        var table = document.createElement("table"),
+            tbody = document.createElement("tbody");
+            table.appendChild(tbody);
+            document.body.appendChild(table);
+        btn.onclick = function() {
+            for(var n=1; n<10; n++) {
+                tbody.insertRow(n-1);
+              for (var m=0,i=n; m<i; m++) {
+                  var t = (m+1)*i;
+                  tbody.rows[n-1].insertCell(m);
+                  tbody.rows[n-1].cells[m].appendChild(document.createTextNode((m+1) + "x" + n + "=" + t));
+              }
+            }
+        }   
+    </script>
+</body>
+</html>
