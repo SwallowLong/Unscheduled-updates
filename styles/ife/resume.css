@@ -1,0 +1,10 @@
+h1 {
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    font: 16px/1.5 serif;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 1em;
+}
