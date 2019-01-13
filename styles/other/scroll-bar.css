@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(to right top, #ffcc00 50%, #eee 50%);
+    /* vh整个视窗的高度 vw为宽度 */
+    /*
+    整个height - 整个是视窗 不是整个高度而是整个视窗而已 让渐变的底线能出现在进度条上 
+    当整个界面并不需要滚动时 height==vh 所以不会有background-size 即不会有渐变
+    */
+    background-size: 100% calc(100% - 100vh + 4px); 
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 4px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
