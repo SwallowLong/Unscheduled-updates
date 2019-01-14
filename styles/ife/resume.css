@@ -1,5 +1,10 @@
 h1 {
     text-shadow: 1px 1px 1px black;
+    background: #eee linear-gradient(to bottom right, yellow, #fff 50%, yellow);
+}
+
+h2 {
+    clear: both;
 }
 
 p {
@@ -7,4 +12,17 @@ p {
     text-align: left;
     text-decoration: none;
     text-indent: 1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.float-left {
+    float: left;
+}
+
+ul {
+    list-style: none;
+    list-style-type: square;
 }
