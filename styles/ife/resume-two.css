@@ -1,0 +1,26 @@
+body {
+    width: 60%;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 800px;
+    text-align: center;
+    background-color: #0a94f0;
+}
+
+main {
+    float: left;
+    padding-left: 27px;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #fff;
+    background: none;
+}

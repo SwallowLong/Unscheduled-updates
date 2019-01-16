@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    background-color: #777;
+}
+
+div {
+   float: left;
+   clear: both;
+   width: 100%;
+   box-sizing: border-box;
+   font-size: 14px;
+   border: 1px solid #ccc;
+}
+
+h1 {
+    padding: 20px;
+    color: #fff;
+}
+
+h2 {
+    padding: 20px;
+    background-color: #eee;
+}
+
+h2,
+p {
+    float: left;
+}
+
+p {
+    padding: 7px;
+}
+
+strong {
+    margin-right: 7px;
+}
