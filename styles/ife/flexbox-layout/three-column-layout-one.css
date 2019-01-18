@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 200px;
+}
+
+.left {
+    flex-basis: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+main {
+    flex-basis: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.right {
+    flex-grow: 1;
+    height: 200px;
+    background-color: brown;
+}

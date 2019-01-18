@@ -1,0 +1,7 @@
+aside {
+    width: calc(100% - 200px);
+}
+
+main {
+    width: 200px;
+}

@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 整体页面结构 */
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+header {
+    overflow: hidden;
+    padding: 0 calc((100% - 960px) / 2);
+    color: #fff;
+    background-color: #333;
+}
+
+nav,
+.homenav,
+.panle {
+    padding: 0 calc((100% - 960px) / 2);
+}
+
+nav {
+    padding-bottom: 10px;
+    background-color: #4ecc37;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #777
+}
+
+/* 页面具体设计 */
+
+.logo {
+    float: left;
+    font-size: 27px;
+    line-height: 2.7;
+}
+
+header ul {
+    float: right;
+    margin-top: 4px;
+}
+
+header li {
+    float: left;
+    margin-left: 4px;
+}
+
+header a {
+    text-decoration: underline;
+}
+
+nav {
+    position: relative;
+    height: 200px;
+    padding-bottom: 10px;
+    background-color: #4ecc33;
+}
+
+nav ul {
+    float: right;
+    position: absolute;
+    right: calc((100% - 960px) / 2 + 10px);
+    bottom: 10px;
+}
+
+nav li {
+    float: left;
+    margin-left: 10px;
+    padding: 14px;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
+nav li:first-child {
+    margin-right: 50px;
+}
+
+.check {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    padding-top: 27px;
+    opacity: 1;
+}
+
+section li {
+    float: left;
+    padding: 12px 27px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+section .checked {
+    border-bottom-color: 2px solid #fff;
+    background-color: #eee;
+}
+
+.homenav {
+    float: left;
+}
+
+hr {
+    clear: both;
+}
+
+.panle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panle div {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+
+.panle div:nth-child(1),
+.panle div:nth-child(2),
+.panle div:nth-child(3),
+.panle div:nth-child(8),
+.panle div:nth-child(9),
+.panle div:nth-child(10) {
+    flex-basis: calc((100% - 20px) / 3);
+    padding: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.panle div:nth-child(4),
+.panle div:nth-child(5),
+.panle div:nth-child(6),
+.panle div:nth-child(7) {
+    flex-basis: calc((100% - 30px) / 4);
+    padding: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.panle div:nth-child(3),
+.panle div:nth-child(7),
+.panle div:nth-child(10) {
+    margin-right: 0;
+}

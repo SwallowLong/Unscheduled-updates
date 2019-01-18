@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 200px;
+}
+
+aside {
+    flex-basis: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+main {
+    flex-grow: 1;
+    height: 200px;
+    background-color: brown;
+}
