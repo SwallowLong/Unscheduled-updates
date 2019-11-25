@@ -1,0 +1,23 @@
+body {
+    margin: 0 35px;
+    background-color: #1d1d1d;
+}
+
+div {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+.lgy {
+    width: 150px;
+    height: 200px;
+}
+
+ul {
+    list-style: none;
+}
